@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block title %}Библиотека мест{% endblock %}
+{% block body %}
+	{% for place in places %}
+		<strong>Place name:</strong> {{ place.place_name }} <br>
+		<strong>Place type:</strong> {{ place.place_type }} <br>
+	<br>
+	{% endfor %}
+{% endblock %}

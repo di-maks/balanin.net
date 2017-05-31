@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}Книги - воздух{% endblock %}
+{% block body %}
+    <br><b>Белый список</b><span class="date">рекомендую читать</span></br>
+    {% for white_book in white_books %}
+		<br>{{ white_book.book_name }}, {{ white_book.book_author }} <span class="date">{{ white_book.book_comment }}</span> </br>
+	{% endfor %}
+    <br> </br>
+    <br><b>Чёрный список</b><span class="date">НЕ рекомендую читать</span></br>
+    {% for black_book in black_books %}
+		<br>{{ black_book.book_name }}, {{ black_book.book_author }} <span class="date">{{ black_book.book_comment }}</span> </br>
+	{% endfor %}
+    <br> </br>
+    <br><b>Буду читать</b></br>
+    {% for unknown_book in unknown_books %}
+		<br>{{ unknown_book.book_name }}, {{ unknown_book.book_author }} <span class="date">{{ unknown_book.book_comment }}</span> </br>
+	{% endfor %}
+{% endblock %}

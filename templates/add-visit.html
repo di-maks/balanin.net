@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}Данные по локациям{% endblock %}
+{% block body %}
+    {% if session.logged_in %}
+        <form action="{{ url_for('add_visit') }}" method=post class=add-entry>
+          <dl>
+            <dt>Visit id:
+            <dd><input type=int name=visit_id>
+            <dt>Place Id:
+            <dd><input type=int name=place_id>
+            <dt>Visit Date:
+            <dd><textarea name=visit_date rows=1 cols=40></textarea>
+            <dd><input type=submit value=Share>
+          </dl>
+        </form>
+      {% endif %}
+{% endblock %}

@@ -1,0 +1,30 @@
+.block {
+    margin: 50px 100px 40px 110px;
+    font: 12pt/10pt arial;
+    color: black;
+}
+
+.header {
+    background-color: #fff;
+    border-radius: 0;
+    z-index: 1000;
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: 20px;
+    border: 1px solid transparent;
+}
+
+.header a {
+  text-decoration: none;
+  color: #222;
+  margin-right: 20px;
+  font: 12pt/10pt arial;
+}
+
+.date {
+  font-size: 70%;
+  color: #555555;
+  line-height: 100%;
+  margin-left: 2px;
+}

@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+
+{% block title %}Теория восприятия{% endblock %}
+{% block body %}
+    {% for post in posts %}
+		<br>{{ post.post_title }},
+        <br>{{ post.post_body }}</br>
+	{% endfor %}
+{% endblock %}
